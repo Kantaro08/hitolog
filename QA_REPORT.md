@@ -31,3 +31,8 @@
 - OCR精度は端末・ブラウザ依存
 - 端末間の自動同期は行わない
 
+
+## 公開確認
+
+GitHub Pages公開成功。index、manifest、service worker、privacy、192/512アイコンはすべてHTTP 200を確認。
+
