@@ -1,1 +1,16 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#5668f5"/><stop offset="1" stop-color="#7c5cff"/></linearGradient></defs><rect width="512" height="512" rx="120" fill="url(#g)"/><path d="M146 120h58v105h104V120h58v272h-58V280H204v112h-58z" fill="white"/></svg>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="bg" x1="48" y1="28" x2="470" y2="486" gradientUnits="userSpaceOnUse"><stop stop-color="#17213f"/><stop offset=".52" stop-color="#4f63f2"/><stop offset="1" stop-color="#8a5cff"/></linearGradient>
+ <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(398 96) rotate(130) scale(260)"><stop stop-color="#b8c2ff" stop-opacity=".58"/><stop offset="1" stop-color="#b8c2ff" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#111936" flood-opacity=".32"/></filter>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg)"/><rect width="512" height="512" rx="112" fill="url(#glow)"/>
+<rect x="74" y="74" width="364" height="364" rx="92" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".18" stroke-width="3"/>
+<g fill="none" stroke="#fff" stroke-opacity=".68" stroke-width="13" stroke-linecap="round"><path d="M176 200 256 324 337 198"/><path d="M176 200h161"/></g>
+<g filter="url(#shadow)">
+ <g transform="translate(176 196)"><circle r="66" fill="#fff"/><circle cy="-13" r="19" fill="#5367f4"/><path d="M-34 35c4-28 17-42 34-42s30 14 34 42" fill="#5367f4"/></g>
+ <g transform="translate(337 196)"><circle r="66" fill="#fff"/><circle cy="-13" r="19" fill="#7b5cf6"/><path d="M-34 35c4-28 17-42 34-42s30 14 34 42" fill="#7b5cf6"/></g>
+ <g transform="translate(256 328)"><circle r="72" fill="#fff"/><circle cy="-14" r="21" fill="#2f3c78"/><path d="M-38 38c5-31 19-46 38-46s33 15 38 46" fill="#2f3c78"/></g>
+</g>
+<g transform="translate(394 117)" fill="#fff"><path d="M0-34c3 23 11 31 34 34C11 3 3 11 0 34-3 11-11 3-34 0-11-3-3-11 0-34Z"/><circle cx="-41" cy="-37" r="7" fill="#d9deff"/></g>
+</svg>
