@@ -6,12 +6,12 @@
 </head><body>
 <div id="lockScreen" class="lock hidden"><div class="lock-card"><div class="logo">H</div><h1>ヒトログ</h1><p>PINを入力してください</p><input id="pinInput" type="password" inputmode="numeric" maxlength="8" placeholder="••••"><button id="unlockButton" class="primary">開く</button><p id="pinError" class="error"></p></div></div>
 <div id="app" class="app">
-<header><button id="backButton" class="icon hidden" aria-label="戻る">←</button><div><small>PRIVATE PEOPLE MEMORY</small><h1>ヒトログ</h1></div><button id="addButton" class="icon primary-icon" aria-label="人物を追加">＋</button></header>
+<header><button id="backButton" class="icon hidden" aria-label="戻る">←</button><div><small>PRIVATE PEOPLE MEMORY</small><h1>ヒトログ</h1></div><button id="addButton" class="icon primary-icon create-button" aria-label="人物を新規作成"><span>＋</span>新規作成</button></header>
 <main>
 <section id="homeScreen" class="screen active">
-<div class="welcome"><div><span id="todayLabel"></span><h2>今日、思い出す人</h2></div><div class="metric"><b id="totalCount">0</b><span>人</span></div></div>
-<div id="duePeople" class="cards"></div><div class="section-title"><div><h3>明日、思い出す人</h3></div></div><div id="tomorrowPeople" class="cards"></div>
-<div class="section-title"><div><h3>最近会った人</h3><p>会話を記録した順</p></div></div><div id="recentPeople" class="cards compact"></div>
+<div class="welcome"><div><span id="todayLabel"></span><h2 id="homeHeading">今日、思い出す人</h2></div><div class="metric"><b id="totalCount">0</b><span>人</span></div></div>
+<div id="duePeople" class="cards"></div><div id="tomorrowSection"><div class="section-title"><div><h3>明日、思い出す人</h3></div></div><div id="tomorrowPeople" class="cards"></div></div><div id="quietHome" class="quiet-home hidden"></div>
+<div id="recentSection"><div class="section-title"><div><h3>最近会った人</h3><p>会話を記録した順</p></div></div><div id="recentPeople" class="cards compact"></div>
 </section>
 <section id="listScreen" class="screen">
 <div class="section-title"><div><h2>人物一覧</h2><p id="personCount">0人</p></div><select id="sortSelect"><option value="updated">最近更新</option><option value="name">名前順</option><option value="contact">次回連絡順</option></select></div>
@@ -43,6 +43,8 @@
 <dialog id="deleteDialog"><p>この人物を削除しますか？</p><div class="dialog-actions"><button id="cancelDelete">キャンセル</button><button id="confirmDelete" class="danger">削除</button></div></dialog>
 <div id="toast" role="status"></div>
 <script src="app.js"></script></body></html>
+
+
 
 
 
