@@ -1,5 +1,5 @@
-const CACHE='hitolog-v8';
-const ASSETS=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./privacy.html'];
+const CACHE='hitolog-v11';
+const ASSETS=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./privacy.html'];
 self.addEventListener('install',event=>event.waitUntil(Promise.all([
   self.skipWaiting(),
   caches.open(CACHE).then(cache=>cache.addAll(ASSETS))
