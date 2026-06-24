@@ -9,6 +9,7 @@
 <header><button id="backButton" class="icon hidden" aria-label="戻る">←</button><div><small>PRIVATE PEOPLE MEMORY</small><h1>ヒトログ</h1></div><button id="addButton" class="icon primary-icon create-button" aria-label="人物を新規作成"><span>＋</span>新規作成</button></header>
 <main><div id="screenTrack" class="screen-track"><section id="homeScreen" class="screen active">
 <div class="welcome"><div><span id="todayLabel"></span><h2 id="homeHeading">今日、思い出す人</h2></div><div class="metric"><b id="totalCount">0</b><span>人</span></div></div>
+<div class="quick-record"><div><b>クイック記録</b><p>人物名＋内容だけで、今日の会話タイムラインへ追加します。</p></div><div class="quick-row"><input id="quickInput" type="text" placeholder="例：山田さん 子供が産まれた" autocomplete="off"><button id="quickButton" type="button" class="primary">記録</button></div><div id="quickResult" class="quick-result hidden"></div></div>
 <div id="duePeople" class="cards"></div><div id="tomorrowSection"><div class="section-title"><div><h3>明日、思い出す人</h3></div></div><div id="tomorrowPeople" class="cards"></div></div><div id="quietHome" class="quiet-home hidden"></div>
 <div id="recentSection"><div class="section-title"><div><h3>最近会った人</h3><p>会話を記録した順</p></div></div><div id="recentPeople" class="cards compact"></div>
 </section><section id="listScreen" class="screen">
