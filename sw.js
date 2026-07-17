@@ -1,4 +1,4 @@
-const CACHE='hitolog-v41';
+const CACHE='hitolog-v42';
 const ASSETS=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./privacy.html'];
 self.addEventListener('install',event=>event.waitUntil(Promise.all([
   self.skipWaiting(),
